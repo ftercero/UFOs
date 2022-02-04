@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.2">
+  <style type="text/css">
+  </style>
+</head>
+<body>
+  <!-- Group elements and specify stylesheet style -->
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg">
+      <!-- To reset the webgae after filter is applied, as opposed to opening another window -->
+      <!-- default styling and to return to an unfiltered page -->
+      <a class="navbar-brand" href="index.html">UFO Sightings</a>
+    </nav>
+  </div>
+  <!-- Add new style -->
+  <div class="jumbotron">
+    <!-- Text within jumbotron for visual enhancement -->
+    <h1>The Truth Is Out There</h1>
+  </div>
+  <!-- Create container to fit width of browser -->
+  <div class="container-fluid">
+    <!-- Align title and paragraph along page -->
+    <div class="row">
+        <!-- Add 4 columns to article title and 8 to the paragraph -->
+        <div class="col-md-4">
+        <!-- Nest article title and de-emphasize second portion of the ttile -->
+          <h3>UFO Sightings - Are they for real? <small>Ufologists Weigh In</small></h3>
+        </div> 
+        <div class="col-md-8">
+          <!-- Add paragraph text -->
+          <p>
+          Are we alone in the universe? For millennia, humans have turned to the sky to answer this question.
+          Now, thanks to research generously funded by W. Avy, a UFO-enthusiast and amateur ufologist, we can supplement our sky-searching with data analysis.<br>
+          <br>"The release of this analysis is well-timed: It coincides with the celebration of World UFO Day, which is a moment for ufologists around the world to connect, 
+          relax, and sample a range of UFO-themed snacks," said Dr. Ursula F. Olivier, the world's preeminent expert on circular sightings. 
+          "Citizen-scientists can be especially helpful in both cataloguing sightings—which is hugely helpful for us in our search for aliens—and in helping us celebrate 
+          the work that has already been done, such as this data visualization project, which will help us raise awareness of the ubiquity of sightings!"<br>
+          <br>Not everyone is ready to celebrate, however. Local CEO and vocal anti-alien activist V. Isualize reached out to our reporters to go on record as firmly opposed to any attempts to provide access to this data. 
+          "If there are aliens, they certainly would like to be left alone," she stated, before directing us to the Leave Aliens Alone (LAA) community engagement initiative she founded and funds.<br>
+          <br>So what do YOU think? Are we alone in the universe? Are aliens trying to contact us, or do they want to be left alone? Dig through the data yourself, and let us know what you see.
+  
+  
+          </p>
+        </div>
+    </div>
+  </div>
+<!-- Insert JavaScript -->
+<!-- Build section for the filter -->
+<div class="container-fluid">
+  <div class="row">
+    <!-- Add 3 columns to filter container -->
+    <div class="col-md-3">
+      <!-- Add Filter button with button name -->
+      <form>
+        <p>Filter Search</p>
+      </form>
+    </div>
+    <!-- Add 9 columns to the table -->
+    <div class="col-md-9">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Country</th>
+            <th>Shape</th>
+            <th>Duration</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <!-- Add unorderd list -->
+      <ul class="list-group">
+        <!-- Add list items for input -->
+        <li class="list-group-item">
+          <!-- Add prompt to input date -->
+          <label for="date">Enter Date</label>
+          <!-- Define the text type, date format, and what the filter will look for in the input field -->
+          <input type="text" placeholder="1/10/2010" id="datetime" />
+        </li>
+        <!-- Add list for button -->
+        <li class="list-group-item">
+          <!-- Add button type and class with JavaScript to override button default action (nothing and buttin name)-->
+          <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+<!--Module says 'Under the title of the document, add this code to the link tag' -->
+<!-- Add link to Bootsraps content delivery network -->
+<link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Add link to stylesheet -->
+    <link rel="stylesheet" href="static/css/style.css">
