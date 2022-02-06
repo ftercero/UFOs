@@ -18,14 +18,15 @@ function buildTable(data) {
         Object.values(dataRow).forEach((val) => {
             let cell = row.append("td");
             cell.text(val);
-        });
+            }
+        );
     });
 }
 
 function handleClick() {
-    // Grab the datetime value from the filter
+    // Grab the datetime value from the filter 11.5.3
     let date = d3.select("#datetime").property("value");
-    let filterData = tableData;
+    let filteredData = tableData;
 
     // Check to see if a date was entered and filter the
     // data using that date.

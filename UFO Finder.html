@@ -4,24 +4,34 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title></title>
+  <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Add link to stylesheet -->
+    <link rel="stylesheet" href="static/css/style.css">
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="2113.2">
   <style type="text/css">
   </style>
 </head>
-<body>
+<!-- Add dark background to the entire page -->
+<body class="bg-dark">
   <!-- Group elements and specify stylesheet style -->
   <div class="wrapper">
-    <nav class="navbar navbar-expand-lg">
+    <!-- Apply dark background anf light lettering to the navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
       <!-- To reset the webgae after filter is applied, as opposed to opening another window -->
       <!-- default styling and to return to an unfiltered page -->
-      <a class="navbar-brand" href="index.html">UFO Sightings</a>
+      <a class="navbar-brand" href="UFO Finder.html">UFO Sightings</a>
     </nav>
   </div>
   <!-- Add new style -->
   <div class="jumbotron">
-    <!-- Text within jumbotron for visual enhancement -->
-    <h1>The Truth Is Out There</h1>
+    <!-- Add font style and size. Add text with jumbotron for visual enhancement -->
+    <h1 class="display-4">The Truth Is Out There</h1>
   </div>
   <!-- Create container to fit width of browser -->
   <div class="container-fluid">
@@ -57,9 +67,24 @@
     <!-- Add 3 columns to filter container -->
     <div class="col-md-3">
       <!-- Add Filter button with button name -->
-      <form>
+      <form class="bg-dark">
         <p>Filter Search</p>
       </form>
+            <!-- Add unorderd list -->
+            <ul class="bg-dark list-group">
+              <!-- Add list items for input -->
+              <li class="bg-dark list-group-item">
+                <!-- Add prompt to input date -->
+                <label for="date">Enter Date</label>
+                <!-- Define the text type, date format, and what the filter will look for in the input field -->
+                <input type="text" placeholder="1/10/2010" id="datetime" />
+              </li>
+              <!-- Add list for button -->
+              <li class="bg-dark list-group-item">
+                <!-- Add button type and class with JavaScript to override button default action (nothing and buttin name)-->
+                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+              </li>
+            </ul>
     </div>
     <!-- Add 9 columns to the table -->
     <div class="col-md-9">
@@ -77,35 +102,18 @@
         </thead>
         <tbody></tbody>
       </table>
-      <!-- Add unorderd list -->
-      <ul class="list-group">
-        <!-- Add list items for input -->
-        <li class="list-group-item">
-          <!-- Add prompt to input date -->
-          <label for="date">Enter Date</label>
-          <!-- Define the text type, date format, and what the filter will look for in the input field -->
-          <input type="text" placeholder="1/10/2010" id="datetime" />
-        </li>
-        <!-- Add list for button -->
-        <li class="list-group-item">
-          <!-- Add button type and class with JavaScript to override button default action (nothing and buttin name)-->
-          <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-        </li>
-      </ul>
     </div>
   </div>
 </div>
-
+    <!-- Link/reference all Javascript to this HTML -->
+    <!-- For d3 to know where to insert data -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <!-- To load data -->
+    <script src="static/js/data.js"></script>
+    <!-- To add filtering code -->
+    <script src="static/js/app.js"></script>
 </body>
 </html>
 
 <!--Module says 'Under the title of the document, add this code to the link tag' -->
 <!-- Add link to Bootsraps content delivery network -->
-<link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <!-- Add link to stylesheet -->
-    <link rel="stylesheet" href="static/css/style.css">
